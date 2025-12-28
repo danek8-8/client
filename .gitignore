@@ -1,9 +1,0 @@
-node_modules/
-public
-src/shims-vue.d.ts
-babel.config.js
-package-lock.json
-package.json
-README.md
-tsconfig.json
-vue.config.js

@@ -7,13 +7,13 @@ const STORAGE_KEY = 'accounts_data'
 /* Интерфейс аккаунта */
 export interface Account {
   id: number
-  labelRaw: string         // Исходная строка меток (разделитель — ;)
-  label: { text: string }[] /*string[]*/          // Массив меток после разбиения labelRaw
-  type: 'LDAP' | 'Local'   // Тип аккаунта
-  login: string            // Логин
-  password: string         // Пароль (если Local)
-  isValid: boolean         // Статус валидности аккаунта
-  errors?: {               // Объект с ошибками валидации по полям
+  labelRaw: string          // Исходная строка меток (разделитель — ;)
+  label: { text: string }[] // Массив меток после разбиения labelRaw
+  type: 'LDAP' | 'Local'    // Тип аккаунта
+  login: string             // Логин
+  password: string          // Пароль (если Local)
+  isValid: boolean          // Статус валидности аккаунта
+  errors?: {                // Объект с ошибками валидации по полям
     labelRaw?: boolean
     login?: boolean
     password?: boolean
